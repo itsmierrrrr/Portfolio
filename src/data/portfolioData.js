@@ -1,4 +1,5 @@
 import profimg from '../assets/Gemini_Generated_Image_vi4ngsvi4ngsvi4n.png'
+import cakeimg from '../assets/cake.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
@@ -110,7 +111,7 @@ export const projects = [
     description:
       'An elegant bakery website with product showcases, category browsing, and conversion-focused call-to-actions.',
     image:
-      'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80',
+      cakeimg,
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/itsmierrrrr', // Replace with project repository
     live: 'https://example.com',
