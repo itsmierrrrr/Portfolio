@@ -1,0 +1,21 @@
+.theme-toggle {
+  width: 3.45rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(130deg, var(--surface-raised), transparent);
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme-toggle__thumb {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: grid;
+  place-items: center;
+  color: var(--text-primary);
+}

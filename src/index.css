@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-main: #0a101b;
+  --text-primary: #f4f7ff;
+  --text-muted: #9faecc;
+  --text-inverse: #f7fbff;
+  --border-soft: rgba(134, 166, 222, 0.26);
+  --border-strong: rgba(169, 198, 250, 0.52);
+  --surface-glass: rgba(12, 21, 38, 0.58);
+  --surface-raised: rgba(17, 31, 57, 0.84);
+  --accent: #4ac6ff;
+  --accent-secondary: #56f2c2;
+  --accent-soft: rgba(74, 198, 255, 0.16);
+  --accent-strong: rgba(74, 198, 255, 0.5);
+  --accent-shadow: rgba(47, 169, 228, 0.3);
+  --accent-shadow-strong: rgba(39, 174, 238, 0.45);
+  --track-bg: rgba(87, 106, 137, 0.34);
+  --noise-color: rgba(240, 248, 255, 0.3);
+  --shadow-soft: 0 20px 42px rgba(2, 9, 24, 0.34);
+}
+
+[data-theme='light'] {
+  --bg-main: #eff5ff;
+  --text-primary: #111b2f;
+  --text-muted: #4d5f83;
+  --text-inverse: #f9fcff;
+  --border-soft: rgba(52, 90, 158, 0.2);
+  --border-strong: rgba(43, 104, 203, 0.4);
+  --surface-glass: rgba(255, 255, 255, 0.7);
+  --surface-raised: rgba(247, 252, 255, 0.95);
+  --accent: #147edd;
+  --accent-secondary: #13b489;
+  --accent-soft: rgba(20, 126, 221, 0.14);
+  --accent-strong: rgba(20, 126, 221, 0.42);
+  --accent-shadow: rgba(26, 115, 210, 0.25);
+  --accent-shadow-strong: rgba(26, 115, 210, 0.35);
+  --track-bg: rgba(101, 122, 159, 0.24);
+  --noise-color: rgba(36, 62, 112, 0.2);
+  --shadow-soft: 0 20px 46px rgba(92, 131, 196, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 12% 14%, rgba(70, 124, 220, 0.22), transparent 44%),
+    radial-gradient(circle at 90% 20%, rgba(41, 199, 162, 0.18), transparent 45%),
+    var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  transition: background 0.45s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

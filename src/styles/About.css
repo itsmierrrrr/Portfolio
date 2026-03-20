@@ -1,0 +1,34 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-card {
+  border: 1px solid var(--border-soft);
+  border-radius: 1.1rem;
+  padding: 1.1rem;
+  background: linear-gradient(140deg, var(--surface-glass), transparent);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-card svg {
+  color: var(--accent);
+}
+
+.about-card h3 {
+  margin: 0.7rem 0 0.4rem;
+  font-size: 1.06rem;
+}
+
+.about-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

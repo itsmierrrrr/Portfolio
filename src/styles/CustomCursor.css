@@ -1,0 +1,19 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  pointer-events: none;
+  z-index: 40;
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 900px), (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
