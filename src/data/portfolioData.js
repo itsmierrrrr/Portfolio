@@ -101,8 +101,8 @@ export const projects = [
     image:
       'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80',
     stack: ['React', 'Vite', 'Framer Motion', 'CSS'],
-    github: 'https://github.com', // Replace with project repository
-    live: 'https://example.com', // Replace with live demo
+    github: 'https://github.com/itsmierrrrr/Portfolio.git', // Replace with project repository
+    live: 'https://portfolioxo.vercel.app/', // Replace with live demo
   },
   {
     title: 'Cake Shop Website',
@@ -112,7 +112,7 @@ export const projects = [
     image:
       'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80',
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com',
+    github: 'https://github.com/itsmierrrrr', // Replace with project repository
     live: 'https://example.com',
   },
 ]
