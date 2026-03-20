@@ -8,10 +8,10 @@ function Footer({ onBackToTop }) {
       <p>{new Date().getFullYear()} {personalInfo.name}. All Rights Reserved.</p>
 
       <div className="footer-socials">
-        <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <a href="https://github.com/itsmierrrrr" target="_blank" rel="noreferrer" aria-label="GitHub">
           <Github size={16} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/mihirsawantxo" target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <Linkedin size={16} />
         </a>
         <a href={`mailto:${personalInfo.email}`} aria-label="Email">

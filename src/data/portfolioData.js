@@ -1,3 +1,4 @@
+import profimg from '../assets/Gemini_Generated_Image_vi4ngsvi4ngsvi4n.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
@@ -8,7 +9,7 @@ export const personalInfo = {
   email: 'mihir.s.sawant17@gmail.com', // Replace with your email
   location: 'Mumbai, India', // Replace with your location
   avatar:
-    'https://lh3.googleusercontent.com/rd-gg-dl/AOI_d__WjoMpDFSXjrSYbJPjdBFQ9Awycq8jzdxIvkvMu0Wc4Rxke_K9H1SW4KJOEj3BeUwVq5Vu_v7MNHs_cBPDZsDSmw5N1yHB5QtlaAPSMiW2zV5K3WCeq-YOU0foWT3zVLPA93hIWnf7zX6c48sjWXH7D9sKP6Q2f2HzPqJSi1l16pk2d_0Q92E4YVbwqQCrVOSJ4jzoZ3L49pyb1HRSx_LVE1G7Jxesm2e6O3XeI_aWopG0kH3VMTPJkC26POWOhIB4ONM1Epk3BovE8XDng5_gLI18I3-SdFn6Gilrh7guh7DNk2pISk_BuLkTgJGC03FTliASCItVnNx9YF9CK8nb-SNjQ5sslSZ9Zuqh0Dp3jM9yeeEOfMUUokzIaSi2VKnPG1JEzwoZJoB0j-B3K2EcK13H3PhcmErACRjQTCN88NGuzgp9sauhk8KEC-XFwblk4zGs1r34SWbusApKjlMafqv2ip9nqMachxZ1geVxM_XtB0qoZtIRk5w_FuUNV9rR8heeVilk-9vnYw3y0DuluXgnZN3hn8MUNdJXjxnyldHDvG3_khGmFAVbpNoNVCGaisCby68o-acpyU6q1eHS_jynJb_n-bMeSarPYmytNwxqazJkMxfX7uyBtw5s7IDKZL5xet83B5MGsdJFOaqjpP5MrmULiG0roM1AupybVDAtOnga9NNKAr5CjTZ78d8nIBfD5oc4rN1ruZUrN2Igobo7awG7EvW5RSbFrK5QBDBL6W9n7cgR53Ob0bQj-UXVlU_nUB4Bv5VG9h4lp7ygpZKOAew4hku1362cB8DfYlyqinY9lM_Crx0XQci6qvSgfHLmyqME4VSpbMr4yk5e3v6nhZ-oRnt7VkjEAw_U0ab10uooeY2jTrnZERBU3ybjIlNUzDgSTCr0RNYa0z2Mbci18m5l0MU8Ht1cUl0spE4bSVHG8cEKqR8urr6vtYcl-EagiYZylkUuOYEUf-LZDpYv6TDheW7MPY3cFlwNuCuK2bMY0YxQ8n3tynCkWh1WcDpOBaC9-1ZU-1HHvcaniqDXj_T--dKknk_gfckciGLYFcmPJ45VAeHaVek960m54SlvQQzaPqEXpEvfz_VBQJrC25pDDRHg252e9cwLbF_Bq8AhYWzcpa4C7pJtdf6Rpee5rHJ_D9F8v2ky6-oERFSJdieDqKg0BKxfkuIwipUFXv20b_jI7snsSs9iJZxfA99cfzR-hXpGRCVlOKE=s1024-rj', // Replace with your profile image
+    profimg, // Replace with your profile image
 }
 
 export const navLinks = [
@@ -28,7 +29,7 @@ export const socialLinks = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com', // Replace with your LinkedIn URL
+    href: 'https://www.linkedin.com/in/mihirsawantxo', // Replace with your LinkedIn URL
     icon: 'linkedin',
   },
   {
