@@ -1,5 +1,6 @@
 import profimg from '../assets/Gemini_Generated_Image_vi4ngsvi4ngsvi4n.png'
 import cakeimg from '../assets/cake.png'
+import pf from '../assets/pf.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
@@ -99,8 +100,7 @@ export const projects = [
     category: 'Web App',
     description:
       'A premium personal portfolio with animated sections, dark/light themes, and refined micro-interactions.',
-    image:
-      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80',
+    image: pf ,
     stack: ['React', 'Vite', 'Framer Motion', 'CSS'],
     github: 'https://github.com/itsmierrrrr/Portfolio.git', // Replace with project repository
     live: 'https://portfolioxo.vercel.app/', // Replace with live demo
