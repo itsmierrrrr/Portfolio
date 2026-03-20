@@ -110,8 +110,7 @@ export const projects = [
     category: 'Web App',
     description:
       'An elegant bakery website with product showcases, category browsing, and conversion-focused call-to-actions.',
-    image:
-      cakeimg,
+    image: cakeimg ,
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/itsmierrrrr', // Replace with project repository
     live: 'https://example.com',
