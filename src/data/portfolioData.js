@@ -8,7 +8,7 @@ export const personalInfo = {
     'I design and engineer immersive digital experiences that blend clarity, motion, and performance.', // Replace with your tagline
   intro:
     'I am a second year engineering student exploring web development and devops.', // Replace with your intro
-  email: 'mihir.s.sawant17@gmail.co', // Replace with your email
+  email: 'mihir.s.sawant17@gmail.com', // Replace with your email
   location: 'Mumbai, India', // Replace with your location
   avatar:
     profimg, // Replace with your profile image
