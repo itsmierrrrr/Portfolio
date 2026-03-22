@@ -5,9 +5,9 @@ export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
   tagline:
-    'I design and engineer immersive digital experiences that blend clarity, motion, and performance.', // Replace with your tagline
+    'I design and build modern digital experiences focused on clarity, performance, and smooth interaction.', // Replace with your tagline
   intro:
-    'I am a second year engineering student exploring web development and devops.', // Replace with your intro
+    'I’m a second-year engineering student passionate about web development and DevOps. I love creating responsive, user-focused web applications and exploring how they can be deployed, automated, and managed efficiently. My interest lies in understanding the complete development process, from building clean and functional interfaces to ensuring smooth deployment and performance. Through personal projects and continuous learning, I’ve been developing my skills in both development and deployment workflows. Web development allows me to bring ideas to life, while DevOps helps me understand the systems, tools, and processes that keep applications running reliably. I’m always eager to learn, experiment, and improve, with the goal of becoming a versatile engineer who can build and manage impactful digital solutions.', // Replace with your intro
   email: 'mihir.s.sawant17@gmail.com', // Replace with your email
   location: 'Mumbai, India', // Replace with your location
   avatar:
@@ -119,27 +119,27 @@ export const projects = [
 
 export const timelineItems = [
   {
-    year: '2026',
-    title: 'Second year',
-    subtitle: 'Learner phase',
-    description: 'Learning DSA, Learning to build projects, Completed various internships and keeping up with academics.',
+    year: '2025-26',
+    title: 'Second Year of Engineering',
+    subtitle: 'Learning and Building Phase',
+    description: 'Currently focused on learning DSA, building practical projects, gaining hands-on experience through internships, and staying consistent with academics.',
   },
   {
-    year: '2025',
-    title: 'First year',
-    subtitle: 'VPPCOE, Mumbai',
-    description: 'Focused on the academics, got introduced to the world of web development and scored CGPA of 8.6',
+    year: '2024-25',
+    title: 'First Year of Engineering',
+    subtitle: 'Beginning of My Engineering Journey',
+    description: 'Completed my first year with a strong focus on academics, discovered my interest in web development, and secured a CGPA of 8.6.',
   },
   {
     year: '2024',
-    title: 'Completed HSC ',
-    subtitle: 'Done with schooling.',
-    description: 'Completed my 12th grade with Computer Science as my main subject.',
+    title: 'Completed Higher Secondary Education ',
+    subtitle: 'T.P. Bhatia College of Science, Mumbai',
+    description: 'Completed my higher secondary education with Computer Science as my primary subject, which deepened my interest in technology and development.',
   },
   {
     year: '2022',
-    title: 'Completed 10th',
+    title: 'Completed 10th Grade',
     subtitle: 'VBSIS, Mumbai',
-    description: 'Done with the Matrix certification and proceede to 11th grade with Computer Science as my main subject.',
+    description: 'Completed my secondary education and chose Computer Science as my main subject for further studies, which strengthened my interest in technology and problem-solving.',
   },
 ]
