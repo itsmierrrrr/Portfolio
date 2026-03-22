@@ -112,8 +112,8 @@ export const projects = [
       'An elegant bakery website with product showcases, category browsing, and conversion-focused call-to-actions.',
     image: cakeimg ,
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com/itsmierrrrr', // Replace with project repository
-    live: 'https://example.com',
+    github: 'https://github.com/itsmierrrrr/Cake-Shop', // Replace with project repository
+    live: 'https://velvetcrumb.vercel.app/', // Replace with live demo
   },
 ]
 
