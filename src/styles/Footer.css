@@ -6,6 +6,8 @@
   padding: 0.9rem 1rem;
   background: var(--surface-glass);
   backdrop-filter: blur(12px);
+  position: relative;
+  overflow: visible;
   display: flex;
   justify-content: space-between;
   gap: 1rem;

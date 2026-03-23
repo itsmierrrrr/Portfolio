@@ -6,7 +6,7 @@ import {
   useSpring,
   useTransform,
 } from 'framer-motion'
-import { ArrowRight, Download, Github, Linkedin, Mail, Instagram } from 'lucide-react'
+import { ArrowRight, MessageCircle, Github, Linkedin, Mail, Instagram } from 'lucide-react'
 import { personalInfo, socialLinks } from '../data/portfolioData'
 import '../styles/Hero.css'
 
@@ -69,7 +69,7 @@ function Hero() {
               View Projects <ArrowRight size={16} />
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Contact Me <Download size={16} />
+              Contact Me <MessageCircle size={16} />
             </a>
           </div>
 

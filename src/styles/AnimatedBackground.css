@@ -1,9 +1,57 @@
 .animated-bg {
+  --rain-core: color-mix(in srgb, var(--text-primary) 18%, white);
+  --rain-soft: color-mix(in srgb, var(--accent) 22%, white);
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: -2;
   overflow: hidden;
+}
+
+.rain-field {
+  position: absolute;
+  inset: -14% -4%;
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--rain-soft) 26%, transparent));
+  opacity: 0.52;
+}
+
+[data-theme='light'] .animated-bg {
+  --rain-core: rgba(76, 84, 100, 0.82);
+  --rain-soft: rgba(118, 126, 142, 0.62);
+}
+
+[data-theme='light'] .rain-field {
+  opacity: 0.66;
+}
+
+.rain-drop {
+  position: absolute;
+  top: -20vh;
+  left: var(--drop-left);
+  width: var(--drop-thickness);
+  height: var(--drop-length);
+  border-radius: 999px;
+  opacity: var(--drop-opacity);
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    color-mix(in srgb, var(--rain-soft) 48%, transparent) 20%,
+    color-mix(in srgb, var(--rain-core) 62%, transparent) 58%,
+    transparent 100%
+  );
+  will-change: transform;
+  animation: rain-fall var(--fall-duration) linear infinite;
+  animation-delay: var(--fall-delay);
+}
+
+.rain-drop::before {
+  content: '';
+  position: absolute;
+  inset: -1px -2px;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(1px);
+  opacity: 0.46;
 }
 
 .blob {
@@ -44,4 +92,13 @@
   background-image: radial-gradient(var(--noise-color) 0.9px, transparent 0.9px);
   background-size: 4px 4px;
   opacity: 0.1;
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translate3d(0, -14vh, 0);
+  }
+  100% {
+    transform: translate3d(var(--drop-drift), 124vh, 0);
+  }
 }
