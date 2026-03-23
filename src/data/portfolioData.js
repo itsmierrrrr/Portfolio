@@ -1,4 +1,4 @@
-import profimg from '../assets/Gemini_Generated_Image_vi4ngsvi4ngsvi4n.png'
+import profimg from '../assets/beach.jpeg'
 import cakeimg from '../assets/cake.png'
 import pf from '../assets/pf.png'
 export const personalInfo = {
