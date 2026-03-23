@@ -1,5 +1,5 @@
 import profimg from '../assets/beach.jpeg'
-import cakeimg from '../assets/cake.png'
+import cakeimg from '../assets/cake1.png'
 import pf from '../assets/pf.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
