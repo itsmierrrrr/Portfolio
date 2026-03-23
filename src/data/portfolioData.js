@@ -1,4 +1,4 @@
-import profimg from '../assets/beach.jpeg'
+import profimg from '../assets/beach1.jpeg'
 import cakeimg from '../assets/cake1.png'
 import pf from '../assets/pf.png'
 export const personalInfo = {
