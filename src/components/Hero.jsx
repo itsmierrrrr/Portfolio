@@ -98,7 +98,7 @@ function Hero() {
           <motion.div className="hero-glow" style={{ background: glow }} />
           <img src={personalInfo.avatar} alt="Profile" loading="lazy" />
           <div className="hero-visual-copy">
-            <strong>Hey, I’m Mihir.</strong>
+            <strong>Hey, I’m Mihi.</strong>
             <span>Building projects, sharpening skills, and turning ideas into reality.</span>
           </div>
         </motion.div>
