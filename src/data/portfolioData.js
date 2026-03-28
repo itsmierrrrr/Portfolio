@@ -86,6 +86,7 @@ export const skillGroups = [
     items: [
       { name: 'Figma', level: 89 },
       { name: 'GitHub Actions', level: 81 },
+      { name: 'Adobe XD', level: 82 },
       //{ name: 'Docker', level: 76 },
       { name: 'Vite', level: 90 },
     ],
