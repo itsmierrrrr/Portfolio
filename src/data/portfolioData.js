@@ -109,7 +109,7 @@ export const projects = [
     title: 'Cake Shop Website',
     category: 'Web App',
     description:
-      'An elegant bakery website with product showcases, category browsing, and conversion-focused call-to-actions.',
+      'An elegant bakery website with beautifully presented product showcases, seamless category browsing, and irresistible call-to-actions that turn visitors into customers. Crafted with warm visuals, smooth interactions, and a responsive design that feels as fresh as a tray of just-out-the-oven pastries',
     image: cakeimg ,
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/itsmierrrrr/Cake-Shop', // Replace with project repository
