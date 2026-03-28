@@ -99,7 +99,7 @@ export const projects = [
     title: 'Portfolio Website',
     category: 'Web App',
     description:
-      'A premium personal portfolio with animated sections, dark/light themes, and refined micro-interactions.',
+      'A premium personal portfolio with animated sections, seamless dark/light themes, and smooth micro-interactions that make every scroll and click feel crisp. Designed with elegant typography, interactive project showcases, and a fully responsive layout for a clean, high-end vibe',
     image: pf ,
     stack: ['React', 'Vite', 'Framer Motion', 'CSS'],
     github: 'https://github.com/itsmierrrrr/Portfolio.git', // Replace with project repository
