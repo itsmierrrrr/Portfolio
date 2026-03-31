@@ -1,6 +1,7 @@
 import profimg from '../assets/beach1.jpeg'
 import cakeimg from '../assets/cake1.png'
 import pf from '../assets/pf.png'
+import atp from '../assets/atp.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
@@ -105,6 +106,16 @@ export const projects = [
     stack: ['React', 'Vite', 'Framer Motion', 'CSS'],
     github: 'https://github.com/itsmierrrrr/Portfolio.git', // Replace with project repository
     live: 'https://portfolioxo.vercel.app/', // Replace with live demo
+  },
+  {
+    title: 'AI Trip Planner',
+    category: 'Web App',
+    description:
+      'An AI-powered travel planner that builds personalized itineraries in seconds based on destination, budget, duration, and travel style. Features a sleek responsive UI with dark/light mode, animated transitions, destination cards, weather insights, and a clean top navigation for a smooth trip-planning experience',
+    image: atp ,
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'OpenRouter API'],
+    github: 'https://github.com/itsmierrrrr/AI-Trip-Planner.git', // Replace with project repository
+    live: 'https://lessgoai.vercel.app/', // Replace with live demo
   },
   {
     title: 'Cake Shop Website',
