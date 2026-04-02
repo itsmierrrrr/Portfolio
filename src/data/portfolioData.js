@@ -125,7 +125,7 @@ export const projects = [
     image: cakeimg ,
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/itsmierrrrr/Cake-Shop', // Replace with project repository
-    live: 'https://velvetcrumb.vercel.app/', // Replace with live demo
+    live: 'https://royalebakes.vercel.app/', // Replace with live demo
   },
 ]
 
