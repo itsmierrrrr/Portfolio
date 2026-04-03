@@ -111,7 +111,7 @@ export const projects = [
     title: 'AI Trip Planner',
     category: 'Web App',
     description:
-      'An AI-powered travel planner that builds personalized itineraries in seconds based on destination, budget, duration, and travel style. Features a sleek responsive UI with dark/light mode, animated transitions, destination cards, weather insights, and a clean top navigation for a smooth trip-planning experience',
+      'An AI-powered trip planner that generates smart itineraries, suggests destinations, and helps users organize travel with a clean, responsive interface. Built with React and Vite, it offers a seamless user experience enhanced by Framer Motion animations and integrates the OpenRouter API for intelligent travel recommendations.',
     image: atp ,
     stack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'OpenRouter API'],
     github: 'https://github.com/itsmierrrrr/AI-Trip-Planner.git', // Replace with project repository
