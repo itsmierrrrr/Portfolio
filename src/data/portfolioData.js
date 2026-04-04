@@ -11,7 +11,7 @@ export const personalInfo = {
     'I’m a second-year engineering student passionate about web development and DevOps. I love creating responsive, user-focused web applications and exploring how they can be deployed, automated, and managed efficiently. My interest lies in understanding the complete development process, from building clean and functional interfaces to ensuring smooth deployment and performance. Through personal projects and continuous learning, I’ve been developing my skills in both development and deployment workflows. Web development allows me to bring ideas to life, while DevOps helps me understand the systems, tools, and processes that keep applications running reliably. I’m always eager to learn, experiment, and improve, with the goal of becoming a versatile engineer who can build and manage impactful digital solutions.', // Replace with your intro
   email: 'mihir.s.sawant17@gmail.com', // Replace with your email
   location: 'Mumbai, India', // Replace with your location
-  resume: '/hackathon resume 1.pdf', // Put your resume file in /public as resume.pdf
+  resume: '/Mihir Sawant Resume.pdf', // Put your resume file in /public as resume.pdf
   avatar:
     profimg, // Replace with your profile image
 }
