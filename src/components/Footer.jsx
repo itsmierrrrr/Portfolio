@@ -1,4 +1,4 @@
-import { ChevronUp, Github, Linkedin, Mail } from 'lucide-react'
+import { ChevronUp, Download, Github, Linkedin, Mail } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 import '../styles/Footer.css'
 
@@ -16,6 +16,9 @@ function Footer({ onBackToTop }) {
         </a>
         <a href={`mailto:${personalInfo.email}`} aria-label="Email">
           <Mail size={16} />
+        </a>
+        <a href={personalInfo.resume} download aria-label="Download resume">
+          <Download size={16} />
         </a>
         <button type="button" onClick={onBackToTop} aria-label="Back to top">
           <ChevronUp size={16} />
