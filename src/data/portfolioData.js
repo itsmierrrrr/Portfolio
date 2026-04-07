@@ -43,7 +43,7 @@ export const socialLinks = [
   },
   {
     label: 'Email',
-    href: 'mailto:', // Replace with your email link
+    href: 'mailto:mihir.s.sawant17@gmail.com', // Replace with your email link
     icon: 'mail',
   },
 ]
