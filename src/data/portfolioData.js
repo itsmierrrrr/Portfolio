@@ -88,7 +88,7 @@ export const skillGroups = [
     items: [
       { name: 'Figma', level: 89 },
       { name: 'GitHub Actions', level: 81 },
-      { name: 'Adobe XD', level: 82 },
+      { name: 'Adobe XD', level: 80 },
       //{ name: 'Docker', level: 76 },
       { name: 'Vite', level: 90 },
     ],
@@ -156,3 +156,4 @@ export const timelineItems = [
     description: 'Completed my secondary education and chose Computer Science as my main subject for further studies, which strengthened my interest in technology and problem-solving.',
   },
 ]
+ 
