@@ -1,4 +1,4 @@
-import { ChevronUp, Download, Github, Linkedin, Mail } from 'lucide-react'
+import { ChevronUp, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 import '../styles/Footer.css'
 
@@ -13,6 +13,9 @@ function Footer({ onBackToTop }) {
         </a>
         <a href="https://www.linkedin.com/in/mihirsawantxo" target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <Linkedin size={16} />
+        </a>
+        <a href="https://instagram.com/mihir.s_" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <Instagram size={16} />
         </a>
         <a href={`mailto:${personalInfo.email}`} aria-label="Email">
           <Mail size={16} />
