@@ -10,6 +10,24 @@ export function useActiveSection(sectionIds) {
 
     if (!sections.length) return undefined
 
+    const updateActiveSection = () => {
+      const viewportCenter = window.innerHeight * 0.4
+
+      const closestSection = sections
+        .map((section) => {
+          const rect = section.getBoundingClientRect()
+          return {
+            id: section.id,
+            distance: Math.abs(rect.top - viewportCenter),
+          }
+        })
+        .sort((a, b) => a.distance - b.distance)[0]
+
+      if (closestSection?.id) {
+        setActiveSection(closestSection.id)
+      }
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -18,17 +36,27 @@ export function useActiveSection(sectionIds) {
 
         if (visible[0]?.target?.id) {
           setActiveSection(visible[0].target.id)
+          return
         }
+
+        updateActiveSection()
       },
       {
-        rootMargin: '-30% 0px -55% 0px',
-        threshold: [0.2, 0.4, 0.7],
+        rootMargin: '-20% 0px -65% 0px',
+        threshold: [0.1, 0.25, 0.5, 0.75],
       },
     )
 
     sections.forEach((section) => observer.observe(section))
+    window.addEventListener('scroll', updateActiveSection, { passive: true })
+    window.addEventListener('resize', updateActiveSection)
+    updateActiveSection()
 
-    return () => observer.disconnect()
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', updateActiveSection)
+      window.removeEventListener('resize', updateActiveSection)
+    }
   }, [sectionIds])
 
   return activeSection

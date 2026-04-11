@@ -24,8 +24,16 @@ function Navbar({ activeSection, onLinkClick, isOpen, onMenuToggle, theme, onThe
               type="button"
               className={activeSection === link.id ? 'nav-link active' : 'nav-link'}
               onClick={(event) => onLinkClick(event, link.id)}
+              aria-current={activeSection === link.id ? 'page' : undefined}
             >
-              {link.label}
+              {activeSection === link.id && (
+                <motion.span
+                  layoutId="active-nav-pill"
+                  className="nav-link-pill"
+                  transition={{ type: 'spring', stiffness: 450, damping: 34 }}
+                />
+              )}
+              <span className="nav-link-label">{link.label}</span>
             </button>
           ))}
         </div>
@@ -67,11 +75,19 @@ function Navbar({ activeSection, onLinkClick, isOpen, onMenuToggle, theme, onThe
                 type="button"
                 className={activeSection === link.id ? 'mobile-nav-link active' : 'mobile-nav-link'}
                 onClick={(event) => onLinkClick(event, link.id)}
+                aria-current={activeSection === link.id ? 'page' : undefined}
                 initial={{ opacity: 0, x: -18 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.35, delay: index * 0.06 }}
               >
-                {link.label}
+                {activeSection === link.id && (
+                  <motion.span
+                    layoutId="active-nav-pill"
+                    className="nav-link-pill"
+                    transition={{ type: 'spring', stiffness: 450, damping: 34 }}
+                  />
+                )}
+                <span className="nav-link-label">{link.label}</span>
               </motion.button>
             ))}
           </motion.div>
