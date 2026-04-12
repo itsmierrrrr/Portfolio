@@ -6,16 +6,10 @@ import {
   useSpring,
   useTransform,
 } from 'framer-motion'
-import { ArrowRight, MessageCircle, Github, Linkedin, Mail, Instagram, Download } from 'lucide-react'
+import { ArrowRight, MessageCircle, Download } from 'lucide-react'
 import { personalInfo, socialLinks } from '../data/portfolioData'
+import SocialIcon from './SocialIcon'
 import '../styles/Hero.css'
-
-const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
-  instagram: Instagram,
-  mail: Mail,
-}
 
 function Hero() {
   const cardRef = useRef(null)
@@ -78,10 +72,9 @@ function Hero() {
 
           <div className="hero-socials">
             {socialLinks.map((link) => {
-              const Icon = iconMap[link.icon] ?? Github
               return (
                 <a key={link.label} href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
-                  <Icon size={17} />
+                  <SocialIcon name={link.icon} size={17} />
                 </a>
               )
             })}

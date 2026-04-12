@@ -42,6 +42,11 @@ export const socialLinks = [
     icon: 'instagram',
   },
   {
+    label: 'Discord',
+    href: 'https://discord.com', // Replace with your Discord profile URL
+    icon: 'discord',
+  },
+  {
     label: 'Email',
     href: 'mailto:mihir.s.sawant17@gmail.com', // Replace with your email link
     icon: 'mail',

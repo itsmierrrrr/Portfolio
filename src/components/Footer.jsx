@@ -1,5 +1,6 @@
-import { ChevronUp, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react'
-import { personalInfo } from '../data/portfolioData'
+import { ChevronUp, Download } from 'lucide-react'
+import { personalInfo, socialLinks } from '../data/portfolioData'
+import SocialIcon from './SocialIcon'
 import '../styles/Footer.css'
 
 function Footer({ onBackToTop }) {
@@ -8,18 +9,17 @@ function Footer({ onBackToTop }) {
       <p>{new Date().getFullYear()} {personalInfo.name}. All Rights Reserved.</p>
 
       <div className="footer-socials">
-        <a href="https://github.com/itsmierrrrr" target="_blank" rel="noreferrer" aria-label="GitHub">
-          <Github size={16} />
-        </a>
-        <a href="https://www.linkedin.com/in/mihirsawantxo" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <Linkedin size={16} />
-        </a>
-        <a href="https://instagram.com/mihir.s_" target="_blank" rel="noreferrer" aria-label="Instagram">
-          <Instagram size={16} />
-        </a>
-        <a href={`mailto:${personalInfo.email}`} aria-label="Email">
-          <Mail size={16} />
-        </a>
+        {socialLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+            rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer'}
+            aria-label={link.label}
+          >
+            <SocialIcon name={link.icon} size={16} />
+          </a>
+        ))}
         <a href={personalInfo.resume} download aria-label="Download resume">
           <Download size={16} />
         </a>
