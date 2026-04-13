@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
   --bg-main: #121925;
@@ -55,7 +55,7 @@ body {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  font-family: 'Ubuntu', 'Segoe UI', sans-serif;
   background: radial-gradient(circle at 12% 14%, rgba(240, 231, 213, 0.14), transparent 44%),
     radial-gradient(circle at 90% 20%, rgba(33, 40, 66, 0.2), transparent 45%),
     var(--bg-main);
@@ -75,7 +75,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Outfit', 'Segoe UI', sans-serif;
+  font-family: 'Ubuntu', 'Segoe UI', sans-serif;
   line-height: 1.2;
   margin: 0;
 }

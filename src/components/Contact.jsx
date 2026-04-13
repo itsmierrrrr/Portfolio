@@ -39,7 +39,7 @@ function Contact() {
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required />
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary contact-send-message">
             Send Message <Send size={16} />
           </button>
 

@@ -59,7 +59,7 @@ function Hero() {
           <p>{personalInfo.tagline}</p>
 
           <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary">
+            <a href="#projects" className="btn btn-primary hero-view-projects">
               View Projects <ArrowRight size={16} />
             </a>
             <a href="#contact" className="btn btn-secondary">

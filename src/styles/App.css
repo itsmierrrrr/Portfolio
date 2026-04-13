@@ -58,6 +58,14 @@ main {
   box-shadow: 0 18px 34px var(--accent-shadow-strong);
 }
 
+[data-theme='dark'] .hero-view-projects {
+  color: #212842;
+}
+
+[data-theme='dark'] .contact-send-message {
+  color: #212842;
+}
+
 .btn-secondary {
   color: var(--text-primary);
   border-color: var(--border-strong);
