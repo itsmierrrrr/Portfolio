@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #0a101b;
-  --text-primary: #f4f7ff;
-  --text-muted: #9faecc;
-  --text-inverse: #f7fbff;
-  --border-soft: rgba(134, 166, 222, 0.26);
-  --border-strong: rgba(169, 198, 250, 0.52);
-  --surface-glass: rgba(12, 21, 38, 0.58);
-  --surface-raised: rgba(17, 31, 57, 0.84);
-  --accent: #4ac6ff;
-  --accent-secondary: #56f2c2;
-  --accent-soft: rgba(74, 198, 255, 0.16);
-  --accent-strong: rgba(74, 198, 255, 0.5);
-  --accent-shadow: rgba(47, 169, 228, 0.3);
-  --accent-shadow-strong: rgba(39, 174, 238, 0.45);
-  --track-bg: rgba(87, 106, 137, 0.34);
-  --noise-color: rgba(240, 248, 255, 0.3);
-  --shadow-soft: 0 20px 42px rgba(2, 9, 24, 0.34);
+  --bg-main: #121925;
+  --text-primary: #f0e7d5;
+  --text-muted: #c9bea8;
+  --text-inverse: #fff8eb;
+  --border-soft: rgba(240, 231, 213, 0.22);
+  --border-strong: rgba(240, 231, 213, 0.42);
+  --surface-glass: rgba(33, 40, 66, 0.64);
+  --surface-raised: rgba(45, 54, 84, 0.88);
+  --accent: #f0e7d5;
+  --accent-secondary: #cfc3ab;
+  --accent-soft: rgba(240, 231, 213, 0.16);
+  --accent-strong: rgba(240, 231, 213, 0.44);
+  --accent-shadow: rgba(33, 40, 66, 0.34);
+  --accent-shadow-strong: rgba(20, 25, 40, 0.5);
+  --track-bg: rgba(96, 108, 142, 0.34);
+  --noise-color: rgba(240, 231, 213, 0.2);
+  --shadow-soft: 0 20px 42px rgba(8, 12, 22, 0.5);
 }
 
 [data-theme='light'] {
-  --bg-main: #eff5ff;
-  --text-primary: #111b2f;
-  --text-muted: #4d5f83;
-  --text-inverse: #f9fcff;
-  --border-soft: rgba(52, 90, 158, 0.2);
-  --border-strong: rgba(43, 104, 203, 0.4);
-  --surface-glass: rgba(255, 255, 255, 0.7);
-  --surface-raised: rgba(247, 252, 255, 0.95);
-  --accent: #147edd;
-  --accent-secondary: #13b489;
-  --accent-soft: rgba(20, 126, 221, 0.14);
-  --accent-strong: rgba(20, 126, 221, 0.42);
-  --accent-shadow: rgba(26, 115, 210, 0.25);
-  --accent-shadow-strong: rgba(26, 115, 210, 0.35);
-  --track-bg: rgba(101, 122, 159, 0.24);
-  --noise-color: rgba(36, 62, 112, 0.2);
-  --shadow-soft: 0 20px 46px rgba(92, 131, 196, 0.2);
+  --bg-main: #f0e7d5;
+  --text-primary: #212842;
+  --text-muted: #5b6279;
+  --text-inverse: #fffaf0;
+  --border-soft: rgba(33, 40, 66, 0.2);
+  --border-strong: rgba(33, 40, 66, 0.38);
+  --surface-glass: rgba(255, 252, 245, 0.78);
+  --surface-raised: rgba(255, 254, 250, 0.97);
+  --accent: #212842;
+  --accent-secondary: #4c5573;
+  --accent-soft: rgba(33, 40, 66, 0.14);
+  --accent-strong: rgba(33, 40, 66, 0.34);
+  --accent-shadow: rgba(33, 40, 66, 0.22);
+  --accent-shadow-strong: rgba(33, 40, 66, 0.32);
+  --track-bg: rgba(91, 98, 121, 0.24);
+  --noise-color: rgba(33, 40, 66, 0.16);
+  --shadow-soft: 0 20px 46px rgba(33, 40, 66, 0.2);
 }
 
 * {
@@ -56,8 +56,8 @@ body {
 
 body {
   font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at 12% 14%, rgba(70, 124, 220, 0.22), transparent 44%),
-    radial-gradient(circle at 90% 20%, rgba(41, 199, 162, 0.18), transparent 45%),
+  background: radial-gradient(circle at 12% 14%, rgba(240, 231, 213, 0.14), transparent 44%),
+    radial-gradient(circle at 90% 20%, rgba(33, 40, 66, 0.2), transparent 45%),
     var(--bg-main);
   color: var(--text-primary);
   min-height: 100vh;
