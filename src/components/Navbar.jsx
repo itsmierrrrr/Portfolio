@@ -13,13 +13,6 @@ function Navbar({ activeSection, onLinkClick, isOpen, onMenuToggle, theme, onThe
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
       >
-        <a
-          href="#home"
-          className="brand"
-          onClick={(event) => onLinkClick(event, 'home')}
-          aria-label="Home"
-        />
-
         <div className="nav-desktop">
           {navLinks.map((link) => (
             <button
