@@ -56,11 +56,11 @@ export const socialLinks = [
 export const aboutCards = [
   {
     title: 'Design-Driven Engineering',
-    text: 'I build with a design-first mindset, ensuring each interaction feels polished and intuitive.',
+    text: 'I build with a design-first mindset, making every interaction feel smooth, sharp, and natural.',
   },
   {
-    title: 'Product & Strategy',
-    text: 'From discovery to launch, I help in building market ready, customers attention pulling websites.',
+    title: 'Vision to Launch',
+    text: 'From idea to launch, I build websites that grab attention, feel effortless, and leave a lasting mark.',
   },
   {
     title: 'Beyond Code',
