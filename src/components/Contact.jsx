@@ -43,7 +43,7 @@ function Contact() {
             Send Message <Send size={16} />
           </button>
 
-          {isSent && <p className="sent-message">Thanks. Your message has been recorded.</p>}
+          {isSent && <p className="sent-message">Thanks for connecting. Kisses from Mihir!</p>}
         </motion.form>
 
         <motion.div
