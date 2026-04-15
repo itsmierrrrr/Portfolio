@@ -34,7 +34,7 @@ function Contact() {
           <input id="name" name="name" type="text" placeholder="Your name" required />
 
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
 
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required />

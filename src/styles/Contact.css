@@ -43,6 +43,15 @@
   box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
+/* Prevent autofill styling */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--surface-raised) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+}
+
 .sent-message {
   margin: 0.3rem 0 0;
   color: var(--accent);
