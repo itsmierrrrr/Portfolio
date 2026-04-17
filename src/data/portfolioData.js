@@ -64,7 +64,7 @@ export const aboutCards = [
   },
   {
     title: 'Beyond Code',
-    text: 'I enjoy playing guitar, playing valorant and going to gym.',
+    text: 'Outside coding, I play guitar, grinding Valorant (most important), and hit the gym.',
   },
 ]
 
