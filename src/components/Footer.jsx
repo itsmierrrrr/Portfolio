@@ -6,7 +6,7 @@ import '../styles/Footer.css'
 function Footer({ onBackToTop }) {
   return (
     <footer className="footer">
-      <p>{new Date().getFullYear()} {personalInfo.name}. All Rights Reserved.</p>
+      <p>{new Date().getFullYear()} {personalInfo.name}. © All Rights Reserved.</p>
 
       <div className="footer-socials">
         {socialLinks.map((link) => (
