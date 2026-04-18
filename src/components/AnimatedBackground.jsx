@@ -7,7 +7,7 @@ function AnimatedBackground() {
     const randomBetween = (min, max) => Math.random() * (max - min) + min
 
     return Array.from({ length: 72 }, (_, index) => {
-      const fallDuration = randomBetween(1.6, 3.8)
+      const fallDuration = randomBetween(2.4, 5.0)
 
       return {
         id: `drop-${index}`,
