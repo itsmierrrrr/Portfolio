@@ -23,48 +23,36 @@
   margin-top: 0.75rem;
 }
 
-.hero-content h1 .hero-name-typewriter {
-  display: inline-block;
-  margin-top: 0;
-  color: var(--text-primary);
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
+.hero-content h1 .hero-role-typewriter {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--text-muted);
   white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.06em solid var(--text-primary);
-  animation: hero-typewriter-loop 5.8s steps(var(--typewriter-characters)) 0.2s infinite,
-    hero-caret-blink 0.9s steps(1, end) 0.2s infinite;
+  line-height: 1.22;
+  min-height: 1.22em;
 }
 
-@keyframes hero-typewriter-loop {
-  0%,
-  10% {
-    width: 0;
-  }
-
-  42%,
-  60% {
-    width: calc(var(--typewriter-characters) * 1ch);
-  }
-
-  92%,
-  100% {
-    width: 0;
-  }
+.hero-content h1 .hero-role-typewriter::after {
+  content: '';
+  display: inline-block;
+  width: 0.05em;
+  height: 0.9em;
+  margin-left: 0.08em;
+  vertical-align: -0.08em;
+  background: var(--text-muted);
+  animation: hero-caret-blink 0.9s steps(1, end) infinite;
 }
 
 @keyframes hero-caret-blink {
   0%,
   48% {
-    border-right-color: var(--text-primary);
+    opacity: 1;
   }
 
   49%,
   100% {
-    border-right-color: transparent;
+    opacity: 0;
   }
 }
 

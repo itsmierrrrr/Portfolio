@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   motion,
   useMotionTemplate,
@@ -15,6 +15,13 @@ function Hero() {
   const cardRef = useRef(null)
   const x = useMotionValue(0)
   const y = useMotionValue(0)
+  const typewriterPhrases = useMemo(
+    () => [personalInfo.role, 'turning caffeine into code'],
+    []
+  )
+  const [typedRole, setTypedRole] = useState('')
+  const [activePhraseIndex, setActivePhraseIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
 
   const smoothX = useSpring(x, { stiffness: 160, damping: 18 })
   const smoothY = useSpring(y, { stiffness: 160, damping: 18 })
@@ -42,6 +49,40 @@ function Hero() {
     y.set(0)
   }
 
+  useEffect(() => {
+    const currentPhrase = typewriterPhrases[activePhraseIndex]
+    const isSecondaryPhrase = activePhraseIndex === 1
+    const typingSpeed = isDeleting
+      ? (isSecondaryPhrase ? 44 : 58)
+      : (isSecondaryPhrase ? 72 : 95)
+    const pauseAfterTyping = isSecondaryPhrase ? 520 : 1200
+    const pauseAfterDeleting = 320
+    let timeoutId
+
+    if (!isDeleting && typedRole === currentPhrase) {
+      timeoutId = window.setTimeout(() => {
+        setIsDeleting(true)
+      }, pauseAfterTyping)
+    } else if (isDeleting && typedRole === '') {
+      timeoutId = window.setTimeout(() => {
+        setIsDeleting(false)
+        setActivePhraseIndex((previousIndex) => (previousIndex + 1) % typewriterPhrases.length)
+      }, pauseAfterDeleting)
+    } else {
+      timeoutId = window.setTimeout(() => {
+        const nextText = isDeleting
+          ? currentPhrase.slice(0, typedRole.length - 1)
+          : currentPhrase.slice(0, typedRole.length + 1)
+
+        setTypedRole(nextText)
+      }, typingSpeed)
+    }
+
+    return () => {
+      window.clearTimeout(timeoutId)
+    }
+  }, [activePhraseIndex, isDeleting, typedRole, typewriterPhrases])
+
   return (
     <section id="home" className="section hero-section">
       <div className="hero-grid">
@@ -53,13 +94,8 @@ function Hero() {
         >
           <span className="eyebrow">Portfolio</span>
           <h1>
-            <span
-              className="hero-name-typewriter"
-              style={{ '--typewriter-characters': personalInfo.name.length }}
-            >
-              {personalInfo.name}
-            </span>
-            <span>{personalInfo.role}</span>
+            {personalInfo.name}
+            <span className="hero-role-typewriter">{typedRole}</span>
           </h1>
           <p>{personalInfo.tagline}</p>
 
