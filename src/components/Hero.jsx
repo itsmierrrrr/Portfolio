@@ -53,7 +53,12 @@ function Hero() {
         >
           <span className="eyebrow">Portfolio</span>
           <h1>
-            {personalInfo.name}
+            <span
+              className="hero-name-typewriter"
+              style={{ '--typewriter-characters': personalInfo.name.length }}
+            >
+              {personalInfo.name}
+            </span>
             <span>{personalInfo.role}</span>
           </h1>
           <p>{personalInfo.tagline}</p>

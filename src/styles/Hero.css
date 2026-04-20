@@ -23,6 +23,51 @@
   margin-top: 0.75rem;
 }
 
+.hero-content h1 .hero-name-typewriter {
+  display: inline-block;
+  margin-top: 0;
+  color: var(--text-primary);
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 0.06em solid var(--text-primary);
+  animation: hero-typewriter-loop 5.8s steps(var(--typewriter-characters)) 0.2s infinite,
+    hero-caret-blink 0.9s steps(1, end) 0.2s infinite;
+}
+
+@keyframes hero-typewriter-loop {
+  0%,
+  10% {
+    width: 0;
+  }
+
+  42%,
+  60% {
+    width: calc(var(--typewriter-characters) * 1ch);
+  }
+
+  92%,
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes hero-caret-blink {
+  0%,
+  48% {
+    border-right-color: var(--text-primary);
+  }
+
+  49%,
+  100% {
+    border-right-color: transparent;
+  }
+}
+
 .eyebrow {
   display: inline-block;
   font-size: 0.78rem;
