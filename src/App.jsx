@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import AnimatedBackground from './components/AnimatedBackground'
 import Navbar from './components/Navbar'
@@ -20,6 +20,7 @@ function App() {
   const [theme, setTheme] = useState('dark')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const nameClickCountRef = useRef(0)
 
   const sectionIds = useMemo(() => navLinks.map((link) => link.id), [])
   const activeSection = useActiveSection(sectionIds)
@@ -44,6 +45,14 @@ function App() {
 
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'))
+  }
+
+  const handleNameEasterEgg = () => {
+    nameClickCountRef.current += 1
+
+    if (nameClickCountRef.current % 7 === 0) {
+      toggleTheme()
+    }
   }
 
   const scrollToSection = (event, sectionId) => {
@@ -74,7 +83,7 @@ function App() {
       />
 
       <main>
-        <Hero />
+        <Hero onNameClick={handleNameEasterEgg} />
         <About />
         <Skills />
         <Projects />

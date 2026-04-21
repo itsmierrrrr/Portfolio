@@ -11,7 +11,7 @@ import { personalInfo, socialLinks } from '../data/portfolioData'
 import SocialIcon from './SocialIcon'
 import '../styles/Hero.css'
 
-function Hero() {
+function Hero({ onNameClick }) {
   const cardRef = useRef(null)
   const x = useMotionValue(0)
   const y = useMotionValue(0)
@@ -94,7 +94,15 @@ function Hero() {
         >
           <span className="eyebrow">Portfolio</span>
           <h1>
-            {personalInfo.name}
+            <button
+              type="button"
+              className="hero-name-trigger"
+              onClick={onNameClick}
+              aria-label="Secret theme toggle"
+              title="Secret theme toggle"
+            >
+              {personalInfo.name}
+            </button>
             <span className="hero-role-typewriter">{typedRole}</span>
           </h1>
           <p>{personalInfo.tagline}</p>

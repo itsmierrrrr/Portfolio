@@ -16,6 +16,11 @@
   letter-spacing: -0.04em;
 }
 
+.hero-name-trigger {
+  all: unset;
+  cursor: pointer;
+}
+
 .hero-content h1 span {
   display: block;
   color: var(--text-muted);
