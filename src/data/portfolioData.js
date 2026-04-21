@@ -75,6 +75,7 @@ export const skillGroups = [
       { name: 'React', level: 95 },
       { name: 'Next.js', level: 90 },
       { name: 'JavaScript', level: 94 },
+      { name: 'TypeScript', level: 90 },
       { name: 'CSS / Motion', level: 92 },
     ],
   },
@@ -82,9 +83,10 @@ export const skillGroups = [
     category: 'Backend',
     items: [
       { name: 'Node.js', level: 88 },
+      { name: 'Express.js', level: 86 },
       { name: 'Python', level: 84 },
       { name: 'Java', level: 80 },
-      { name: 'C++', level: 78 },
+      { name: 'C++', level: 92 },
       { name: 'MongoDB', level: 83 },
     ],
   },
@@ -92,6 +94,7 @@ export const skillGroups = [
     category: 'Tools',
     items: [
       { name: 'Figma', level: 82 },
+      { name: 'Framer', level: 84 },
       { name: 'GitHub Actions', level: 81 },
       { name: 'Adobe XD', level: 80 },
       //{ name: 'Docker', level: 76 },

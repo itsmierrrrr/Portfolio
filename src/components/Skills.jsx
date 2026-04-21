@@ -1,7 +1,49 @@
 import { motion } from 'framer-motion'
+import {
+  Atom,
+  Boxes,
+  Database,
+  Figma,
+  Flame,
+  Github,
+  Layers,
+  PenTool,
+  Wrench,
+} from 'lucide-react'
+import {
+  SiCplusplus,
+  SiCss,
+  SiExpress,
+  SiFramer,
+  SiJavascript,
+  SiNodedotjs,
+  SiPython,
+  SiTypescript,
+} from 'react-icons/si'
+import { FaJava } from 'react-icons/fa6'
 import SectionHeading from './SectionHeading'
 import { skillGroups } from '../data/portfolioData'
 import '../styles/Skills.css'
+
+const skillIcons = {
+  React: Atom,
+  'Next.js': Layers,
+  JavaScript: SiJavascript,
+  TypeScript: SiTypescript,
+  'CSS / Motion': SiCss,
+  'Node.js': SiNodedotjs,
+  'Express.js': SiExpress,
+  Python: SiPython,
+  Java: FaJava,
+  'C++': SiCplusplus,
+  MongoDB: Database,
+  Figma,
+  Framer: SiFramer,
+  'GitHub Actions': Github,
+  'Adobe XD': PenTool,
+  Vite: Flame,
+  Docker: Boxes,
+}
 
 function Skills() {
   return (
@@ -27,7 +69,14 @@ function Skills() {
             {group.items.map((skill, index) => (
               <div className="skill-row" key={skill.name}>
                 <div className="skill-top">
-                  <span>{skill.name}</span>
+                  <span className="skill-name-with-icon">
+                    {(() => {
+                      const SkillIcon = skillIcons[skill.name] || Wrench
+
+                      return <SkillIcon size={14} aria-hidden="true" />
+                    })()}
+                    <span>{skill.name}</span>
+                  </span>
                   <span>{skill.level}%</span>
                 </div>
                 <div className="skill-track">

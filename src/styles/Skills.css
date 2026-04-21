@@ -28,6 +28,16 @@
   font-size: 0.89rem;
 }
 
+.skill-name-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.skill-name-with-icon svg {
+  color: var(--accent);
+}
+
 .skill-track {
   height: 8px;
   border-radius: 999px;
