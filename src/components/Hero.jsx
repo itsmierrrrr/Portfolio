@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import {
+  AnimatePresence,
   motion,
   useMotionTemplate,
   useMotionValue,
@@ -19,9 +20,21 @@ function Hero({ onNameClick }) {
     () => [personalInfo.role, 'turning caffeine into code'],
     []
   )
+  const heroCopyLines = useMemo(
+    () => [
+      'Weekend patch notes: fixed burnout, improved mood.',
+      'Debugging life, one semicolon at a time.',
+      'Currently teaching pixels new tricks.',
+      'Building side quests after lectures.',
+      'Deploying tiny pieces of the future.',
+      'Farming XP in React and late nights.',
+    ],
+    []
+  )
   const [typedRole, setTypedRole] = useState('')
   const [activePhraseIndex, setActivePhraseIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
+  const [heroCopyIndex, setHeroCopyIndex] = useState(0)
 
   const smoothX = useSpring(x, { stiffness: 160, damping: 18 })
   const smoothY = useSpring(y, { stiffness: 160, damping: 18 })
@@ -82,6 +95,16 @@ function Hero({ onNameClick }) {
       window.clearTimeout(timeoutId)
     }
   }, [activePhraseIndex, isDeleting, typedRole, typewriterPhrases])
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setHeroCopyIndex((currentIndex) => (currentIndex + 1) % heroCopyLines.length)
+    }, 3000)
+
+    return () => {
+      window.clearInterval(intervalId)
+    }
+  }, [heroCopyLines.length])
 
   return (
     <section id="home" className="section hero-section">
@@ -144,7 +167,17 @@ function Hero({ onNameClick }) {
           <img src={personalInfo.avatar} alt="Profile" loading="lazy" />
           <div className="hero-visual-copy">
             <strong>Hey, I'm Mihir, in creative mode.</strong>
-            <span>Weekend patch notes: fixed burnout, improved mood.</span>
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={heroCopyIndex}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              >
+                {heroCopyLines[heroCopyIndex]}
+              </motion.span>
+            </AnimatePresence>
           </div>
         </motion.div>
       </div>
