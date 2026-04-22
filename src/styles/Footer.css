@@ -26,8 +26,7 @@
 }
 
 .footer-socials a,
-.footer-socials button,
-.footer-socials .footer-icon {
+.footer-socials button {
   width: 2rem;
   height: 2rem;
   border-radius: 0.7rem;
@@ -38,14 +37,6 @@
   background: var(--surface-raised);
   text-decoration: none;
   cursor: pointer;
-}
-
-.footer-socials .footer-icon {
-  cursor: default;
-}
-
-.footer-egg svg {
-  display: block;
 }
 
 @media (max-width: 900px) {
