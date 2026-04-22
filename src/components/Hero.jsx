@@ -151,6 +151,11 @@ function Hero({ onNameClick }) {
               )
             })}
           </div>
+
+          <span className="hero-live-status">
+            <span className="hero-live-dot" aria-hidden="true" />
+            Available for projects
+          </span>
         </motion.div>
 
         <motion.div
@@ -166,7 +171,9 @@ function Hero({ onNameClick }) {
           <motion.div className="hero-glow" style={{ background: glow }} />
           <img src={personalInfo.avatar} alt="Profile" loading="lazy" />
           <div className="hero-visual-copy">
-            <strong>Hey, I'm Mihir, in creative mode.</strong>
+            <div className="hero-visual-meta">
+              <strong>Hey, I'm Mihir, in creative mode.</strong>
+            </div>
             <AnimatePresence mode="wait">
               <motion.span
                 key={heroCopyIndex}
