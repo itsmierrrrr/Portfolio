@@ -1,21 +1,20 @@
 import { useEffect } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useMotionValue } from 'framer-motion'
 import '../styles/CustomCursor.css'
+
+const CURSOR_SIZE = 12
 
 function CustomCursor() {
   const x = useMotionValue(-100)
   const y = useMotionValue(-100)
 
-  const springX = useSpring(x, { stiffness: 350, damping: 30, mass: 0.2 })
-  const springY = useSpring(y, { stiffness: 350, damping: 30, mass: 0.2 })
-
   useEffect(() => {
     const update = (event) => {
-      x.set(event.clientX - 10)
-      y.set(event.clientY - 10)
+      x.set(event.clientX - CURSOR_SIZE / 2)
+      y.set(event.clientY - CURSOR_SIZE / 2)
     }
 
-    window.addEventListener('pointermove', update)
+    window.addEventListener('pointermove', update, { passive: true })
 
     return () => window.removeEventListener('pointermove', update)
   }, [x, y])
@@ -23,7 +22,7 @@ function CustomCursor() {
   return (
     <motion.div
       className="custom-cursor"
-      style={{ translateX: springX, translateY: springY }}
+      style={{ translateX: x, translateY: y }}
       aria-hidden="true"
     />
   )
