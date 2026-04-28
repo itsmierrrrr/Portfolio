@@ -154,7 +154,7 @@ function Hero({ onNameClick }) {
 
           <span className="hero-live-status">
             <span className="hero-live-dot" aria-hidden="true" />
-            Available for projects
+            Busy with endsem exams
           </span>
         </motion.div>
 
