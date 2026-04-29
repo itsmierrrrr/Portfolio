@@ -72,7 +72,7 @@ export const skillGroups = [
   {
     category: 'Frontend',
     items: [
-      { name: 'React', level: 95 },
+      { name: 'React', level: 96 },
       { name: 'Next.js', level: 90 },
       { name: 'JavaScript', level: 94 },
       { name: 'TypeScript', level: 90 },
