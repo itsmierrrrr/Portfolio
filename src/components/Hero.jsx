@@ -121,10 +121,29 @@ function Hero({ onNameClick }) {
               type="button"
               className="hero-name-trigger"
               onClick={onNameClick}
-              aria-label="Secret theme toggle"
-              title="Secret theme toggle"
+              aria-label="Mihir Sawant"
             >
-              {personalInfo.name}
+              <span className="hero-name">
+                <span className="swap swap-mi">
+                  <span className="lat">Mi</span>
+                  <span className="dev">मि</span>
+                </span>
+                <span className="lat-rest">hi</span>
+                <span className="swap swap-r">
+                  <span className="lat">r</span>
+                  <span className="dev">र</span>
+                </span>
+                <span className="space"> </span>
+                <span className="swap swap-sa">
+                  <span className="lat">Sa</span>
+                  <span className="dev">सा</span>
+                </span>
+                <span className="lat-rest">wan</span>
+                <span className="swap swap-t">
+                  <span className="lat">t</span>
+                  <span className="dev">त</span>
+                </span>
+              </span>
             </button>
             <span className="hero-role-typewriter">{typedRole}</span>
           </h1>
