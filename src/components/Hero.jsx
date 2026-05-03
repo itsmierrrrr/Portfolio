@@ -115,7 +115,7 @@ function Hero({ onNameClick }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="eyebrow">Portfolio</span>
+          <span className="eyebrow"></span>
           <h1>
             <button
               type="button"
