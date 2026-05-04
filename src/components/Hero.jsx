@@ -138,7 +138,11 @@ function Hero({ onNameClick }) {
                   <span className="lat">Sa</span>
                   <span className="dev">सा</span>
                 </span>
-                <span className="lat-rest">wan</span>
+                <span className="swap swap-w">
+                  <span className="lat">w</span>
+                  <span className="dev">व</span>
+                </span>
+                <span className="lat-rest">an</span>
                 <span className="swap swap-t">
                   <span className="lat">t</span>
                   <span className="dev">त</span>

@@ -102,6 +102,11 @@
   animation-duration: 5s;
 }
 
+.hero-name .swap-w .lat,
+.hero-name .swap-w .dev {
+  animation-duration: 6s;
+}
+
 .hero-name .swap-t .lat,
 .hero-name .swap-t .dev {
   animation-duration: 4s;
