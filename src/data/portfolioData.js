@@ -6,7 +6,7 @@ export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
   tagline:
-    'I design and build modern digital experiences focused on clarity, performance, and smooth interaction.', // Replace with your tagline
+    'I design and build sleek digital experiences focused on clarity, speed, and interactions that just feel right.', // Replace with your tagline
   intro:
     'I’m a second-year engineering student passionate about web development and DevOps. I love creating responsive, user-focused web applications and exploring how they can be deployed, automated, and managed efficiently. My interest lies in understanding the complete development process, from building clean and functional interfaces to ensuring smooth deployment and performance. Through personal projects and continuous learning, I’ve been developing my skills in both development and deployment workflows. Web development allows me to bring ideas to life, while DevOps helps me understand the systems, tools, and processes that keep applications running reliably. I’m always eager to learn, experiment, and improve, with the goal of becoming a versatile engineer who can build and manage impactful digital solutions.', // Replace with your intro
   email: 'mihir.s.sawant17@gmail.com', // Replace with your email
