@@ -98,7 +98,7 @@ export const skillGroups = [
       { name: 'GitHub Actions', level: 81 },
       { name: 'Adobe XD', level: 80 },
       //{ name: 'Docker', level: 76 },
-      { name: 'Vite', level: 90 },
+      //{ name: 'Vite', level: 90 },
     ],
   },
 ]
