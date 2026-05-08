@@ -86,7 +86,7 @@ export const skillGroups = [
       { name: 'Express.js', level: 86 },
       { name: 'Python', level: 89 },
       { name: 'Java', level: 80 },
-      { name: 'C++', level: 92 },
+      { name: 'C++', level: 90 },
       { name: 'MongoDB', level: 89 },
     ],
   },
