@@ -1,8 +1,20 @@
 # Portfolio Website
 
-A modern, animated personal portfolio built with React and Vite.
+This portfolio blends sleek UI with fluid motion design, featuring buttery-smooth section transitions, immersive animations, persistent dark/light themes, responsive navigation, intelligent project filtering, and a fully data-driven architecture for effortless content updates.
 
-It includes smooth section transitions, dark/light theme support with persistence, responsive navigation, custom motion effects, project filtering, and a data-driven content layer for easy updates.
+Crafted with performance-first principles and modern interaction patterns, it delivers a fast, polished experience across every screen size, from ultrawide desktops to pocket-sized chaos machines
+
+Highlights include:
+
+Smooth scroll-based animations & micro-interactions
+Persistent theme system with seamless switching
+Responsive navigation with adaptive layouts
+Dynamic project showcase with category filtering
+Modular, scalable component structure
+Data-powered content management for quick customization
+Optimized performance using Vite’s lightning-fast build pipeline
+
+Built not just to display projects, but to feel like a product itself.
 
 ## Tech Stack
 
