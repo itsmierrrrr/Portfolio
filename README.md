@@ -120,7 +120,6 @@ Typical flow:
 1. Push the repository to GitHub.
 2. Import the repository into your hosting provider.
 3. Use the build command: `npm run build`.
-4. Use the output directory: `dist`.
 
 ## Author
 
