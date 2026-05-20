@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+Devanagari:wght@400&display=swap');
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.devnagari-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --bg-main: #121925;
@@ -55,7 +67,7 @@ body {
 }
 
 body {
-  font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+  font-family: "Anta", sans-serif;
   background: radial-gradient(circle at 12% 14%, rgba(240, 231, 213, 0.14), transparent 44%),
     radial-gradient(circle at 90% 20%, rgba(33, 40, 66, 0.2), transparent 45%),
     var(--bg-main);
@@ -63,6 +75,15 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   transition: background 0.45s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root {
