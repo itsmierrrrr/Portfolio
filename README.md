@@ -4,7 +4,7 @@ This portfolio blends sleek UI with fluid motion design, featuring buttery-smoot
 
 Crafted with performance-first principles and modern interaction patterns, it delivers a fast, polished experience across every screen size, from ultrawide desktops to pocket-sized chaos machines
 
-Highlights include:
+Highlights:
 
 Smooth scroll-based animations & micro-interactions
 Persistent theme system with seamless switching
