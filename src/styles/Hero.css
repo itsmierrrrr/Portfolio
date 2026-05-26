@@ -215,22 +215,22 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #e62323;
-  box-shadow: 0 0 0 0 rgba(231, 22, 40, 0.65);
+  background: #19d238;
+  box-shadow: 0 0 0 0 rgba(33, 184, 53, 0.65);
   animation: hero-live-pulse 1.8s ease-out infinite;
 }
 
 @keyframes hero-live-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(231, 22, 40, 0.65);
+    box-shadow: 0 0 0 0 rgba(22, 167, 39, 0.65);
   }
 
   70% {
-    box-shadow: 0 0 0 8px rgba(231, 22, 40, 0);
+    box-shadow: 0 0 0 8px rgba(19, 99, 23, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(231, 22, 40, 0);
+    box-shadow: 0 0 0 0 rgba(8, 53, 16, 0);
   }
 }
 
