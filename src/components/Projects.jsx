@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, BarChart } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { projectCategories, projects } from '../data/portfolioData'
 import '../styles/Projects.css'
@@ -65,6 +65,9 @@ function Projects() {
                 </a>
                 <a href={project.live} target="_blank" rel="noreferrer">
                   <ExternalLink size={16} /> Live
+                </a>
+                <a href={project.analysis} target="_blank" rel="noreferrer">
+                  <BarChart size={16} /> Analysis
                 </a>
               </div>
             </div>

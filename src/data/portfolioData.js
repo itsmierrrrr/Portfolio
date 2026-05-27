@@ -115,6 +115,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Framer Motion', 'CSS'],
     github: 'https://github.com/itsmierrrrr/Portfolio.git', // Replace with project repository
     live: 'https://portfolioxo.vercel.app/', // Replace with live demo
+    analysis: 'https://example.com/analysis/portfolio-website',
   },
   {
     title: 'AI Trip Planner',
@@ -125,6 +126,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'OpenRouter API'],
     github: 'https://github.com/itsmierrrrr/AI-Trip-Planner.git', // Replace with project repository
     live: 'https://lessgoai.vercel.app/', // Replace with live demo
+    analysis: 'https://example.com/analysis/ai-trip-planner',
   },
   {
     title: 'Cake Shop Website',
@@ -135,6 +137,7 @@ export const projects = [
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/itsmierrrrr/Cake-Shop', // Replace with project repository
     live: 'https://royalebakes.vercel.app/', // Replace with live demo
+    analysis: 'https://example.com/analysis/cake-shop-website',
   },
 ]
 
