@@ -139,6 +139,17 @@ export const projects = [
     live: 'https://royalebakes.vercel.app/', // Replace with live demo
     analysis: 'https://example.com/analysis/cake-shop-website',
   },
+  {
+  title: 'Plant Pulse',
+  category: 'AI Plant Health Tracker',
+  description:
+    'An intelligent plant care platform that transforms a simple photo into actionable health insights. Upload plant images, detect diseases with AI, receive personalized care recommendations, and monitor analysis history through a modern, responsive dashboard designed to make plant care effortless.',
+  image: plantpulseimg,
+  stack: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
+  github: 'https://github.com/itsmierrrrr/plant-health-tracker',
+  live: 'https://plantpulsego.vercel.app/',
+  analysis: 'https://example.com/analysis/plant-pulse',
+  },
 ]
 
 export const timelineItems = [
