@@ -2,6 +2,7 @@ import profimg from '../assets/beach1.jpeg'
 import cakeimg from '../assets/cake1.png'
 import pf from '../assets/pf.png'
 import atp from '../assets/atp.png'
+import plantpulse from '../assets/plantpulse.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
@@ -144,7 +145,7 @@ export const projects = [
   category: 'AI Plant Health Tracker',
   description:
     'An intelligent plant care platform that transforms a simple photo into actionable health insights. Upload plant images, detect diseases with AI, receive personalized care recommendations, and monitor analysis history through a modern, responsive dashboard designed to make plant care effortless.',
-  image: plantpulseimg,
+  image: plantpulse,
   stack: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
   github: 'https://github.com/itsmierrrrr/plant-health-tracker',
   live: 'https://plantpulsego.vercel.app/',
