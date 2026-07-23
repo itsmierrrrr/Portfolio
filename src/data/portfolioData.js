@@ -144,7 +144,7 @@ export const projects = [
   title: 'Plant Pulse',
   category: 'AI Plant Health Tracker',
   description:
-    'An intelligent plant care platform that transforms a simple photo into actionable health insights. Upload plant images, detect diseases with AI, receive personalized care recommendations, and monitor analysis history through a modern, responsive dashboard designed to make plant care effortless.',
+    'An AI-enhanced plant monitoring platform that helps users detect plant diseases early, understand health conditions, and make informed care decisions through intelligent image analysis and a beautifully designed dashboard.',
   image: plantpulse,
   stack: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
   github: 'https://github.com/itsmierrrrr/plant-health-tracker',
