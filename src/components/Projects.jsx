@@ -17,7 +17,7 @@ function Projects() {
     <section id="projects" className="section">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected work built for ambitious teams"
+        title="Projects Built for Real-World Impact"
         description="Curated examples of web products, motion systems, and conversion-focused digital experiences."
       />
 
