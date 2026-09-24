@@ -142,7 +142,7 @@ export const projects = [
   },
   {
   title: 'Plant Pulse',
-  category: 'AI Plant Health Tracker',
+  category: 'Web App',
   description:
     'An AI-enhanced plant monitoring platform that helps users detect plant diseases early, understand health conditions, and make informed care decisions through intelligent image analysis and a beautifully designed dashboard.',
   image: plantpulse,
