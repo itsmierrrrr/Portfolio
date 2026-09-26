@@ -151,6 +151,17 @@ export const projects = [
   live: 'https://plantpulsego.vercel.app/',
   analysis: 'https://example.com/analysis/plant-pulse',
   },
+  {
+  title: 'Pए — From Craft to Market',
+  category: 'Web App',
+  description:
+    'An AI-powered digital commerce enablement platform that helps artisans transform handmade products into structured, verified, priced, and market-ready digital products through AI productization, voice-based product interviews, explainable pricing, adaptive market packs, and pre-rejection validation.',
+  image: paeimg,
+  stack: ['React', 'Node.js', 'MongoDB', 'Express', 'OpenRouter'],
+  github: 'https://github.com/itsmierrrrr/pae',
+  live: 'https://paexo.vercel.app/',
+  analysis: 'https://example.com/analysis/pae-from-craft-to-market',
+},
 ]
 
 export const timelineItems = [
