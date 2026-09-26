@@ -3,6 +3,7 @@ import cakeimg from '../assets/cake1.png'
 import pf from '../assets/pf.png'
 import atp from '../assets/atp.png'
 import plantpulse from '../assets/plantpulse.png'
+import paeimg from '../assets/paeimg.png'
 export const personalInfo = {
   name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
