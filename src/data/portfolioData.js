@@ -5,7 +5,7 @@ import atp from '../assets/atp.png'
 import plantpulse from '../assets/plantpulse.png'
 import paeimg from '../assets/paeimg.png'
 export const personalInfo = {
-  name: 'Mihir S. Sawant', // Replace with your name
+  name: 'Mihir Sawant', // Replace with your name
   role: 'Full-Stack Web Developer', // Replace with your role
   tagline:
     'I design and build sleek digital experiences focused on clarity, speed, and interactions that just feel right.', // Replace with your tagline
